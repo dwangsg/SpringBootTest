@@ -1,5 +1,6 @@
 package com.test.model;
 
+import io.swagger.annotations.ApiModelProperty;
 import org.hibernate.annotations.NaturalId;
 
 import javax.persistence.*;
@@ -14,6 +15,7 @@ public class FundDetail extends BaseEntity {
 
     @NaturalId
     @Column(name = "mstar_id", nullable = false)
+    @ApiModelProperty(value = "morning star ID")
     String mStarID;
 
     @Column(name = "isin")
